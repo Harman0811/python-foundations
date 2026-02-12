@@ -1,2 +1,2 @@
 # python-foundations
-my firat repository
+my first repository
