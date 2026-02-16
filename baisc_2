@@ -1,0 +1,162 @@
+**Variables in Python**
+__Definition__
+
+A variable is a named container used to store data values.
+
+x = 10
+name = "Rahul"
+pi = 3.14
+
+
+Here:
+
+x stores an integer
+
+name stores a string
+
+pi stores a float
+
+**Rules for Naming Variables**
+
+-> Must start with a letter or underscore _
+
+-> Cannot start with a number
+
+-> Cannot contain spaces
+
+-> Case-sensitive (age and Age are different)
+
+-> Cannot use reserved keywords (if, for, while, etc.)
+
+Valid:
+
+age = 20
+_total = 100
+student_name = "Amit"
+
+
+Invalid:
+
+1age = 20
+student name = "Amit"
+
+**Python is a dynamically typed language**
+
+**Data Types in Python**
+
+__Data types define the type of value stored in a variable.__
+
+1. Numeric Data Types
+a) Integer (int)
+
+Whole numbers:
+
+a = 10
+b = -5
+
+b) Float (float)
+
+Decimal numbers:
+
+pi = 3.14
+temp = -2.5
+
+c) Complex (complex)
+z = 2 + 3j
+
+2. String (str)
+
+Sequence of characters enclosed in quotes.
+
+name = "Data Science"
+course = 'Python'
+
+
+Strings are immutable (cannot be changed after creation).
+
+3. Boolean (bool)
+
+Only two values:
+
+True
+False
+
+
+Example:
+
+x = 5 > 3  # True
+
+4. None Type
+
+Represents absence of value.
+
+x = None
+
+**Checking Data Type**
+x = 10
+print(type(x))
+
+
+Output:
+
+<class 'int'>
+
+**Type Conversion (Type Casting)**
+__Implicit Conversion__
+
+Python automatically converts:
+
+x = 10
+y = 3.5
+result = x + y   # 13.5
+
+__Explicit Conversion__
+a = "10"
+b = int(a)
+
+c = 3.5
+d = int(c)
+
+e = 100
+f = str(e)
+
+
+**Invalid conversion:**
+
+int("Hello")  # Error
+
+**Input and Output in Python**
+__Output Function – print()__
+print("Hello World")
+
+
+Multiple values:
+
+name = "Rahul"
+age = 20
+print(name, age)
+
+
+Using f-strings (recommended):
+
+print(f"My name is {name} and I am {age} years old")
+
+__Input Function – input()__
+
+Used to take user input.
+
+name = input("Enter your name: ")
+print(name)
+
+
+**input() always returns a string.**
+
+Example:
+
+age = input("Enter age: ")
+print(type(age))
+
+
+To convert:
+
+age = int(input("Enter age: "))
