@@ -1,0 +1,90 @@
+# BASIC NOTES:
+
+# Conditional statements are used to make decisions in a program.
+# They allow the program to execute different blocks of code
+# depending on whether a condition is True or False.
+
+# Main keywords:
+# - if      → checks a condition
+# - elif    → checks another condition if previous is False
+# - else    → runs if all above conditions are False
+#
+# Important:
+# - Indentation is mandatory in Python
+# - Conditions must return True or False
+
+print(" BASIC IF-ELSE ")
+
+age = 18
+
+# if condition checks whether age is >= 18
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+
+print(" IF-ELIF-ELSE CHAIN ")
+
+marks = 76
+
+# Only one block will execute from this chain
+if marks >= 90:
+    print("Grade: A+")
+elif marks >= 75:
+    print("Grade: A")
+elif marks >= 60:
+    print("Grade: B")
+elif marks >= 40:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
+
+
+print(" NESTED IF ")
+
+number = 12
+
+# Nested if means an if statement inside another if
+if number >= 0:
+    if number == 0:
+        print("Number is zero.")
+    else:
+        print("Number is positive.")
+else:
+    print("Number is negative.")
+
+
+print(" CHECK EVEN OR ODD ")
+
+num = 7
+
+# % (modulus) gives remainder
+if num % 2 == 0:
+    print(num, "is Even")
+else:
+    print(num, "is Odd")
+
+
+print(" SIMPLE PASSWORD CHECK ")
+
+correct_password = "python123"
+entered_password = "python123"
+
+# Comparing two strings
+if entered_password == correct_password:
+    print("Access granted.")
+else:
+    print("Access denied.")
+
+
+print(" USING LOGICAL OPERATORS IN IF ")
+
+temperature = 30
+is_raining = False
+
+# Logical operators: and, or, not
+if temperature > 25 and not is_raining:
+    print("Good weather to go outside!")
+else:
+    print("Better stay inside.")
