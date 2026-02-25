@@ -1,0 +1,96 @@
+# BASIC NOTES:
+
+# A function is a block of reusable code that performs a specific task.
+
+# Why use functions?
+# - Avoid code repetition
+# - Improve readability
+# - Make programs modular
+
+# Syntax:
+# def function_name(parameters):
+#     code
+
+# Important concepts:
+# - parameters → inputs to the function
+# - return → sends value back to caller
+
+
+print(" BASIC FUNCTION ")
+
+# simple function without parameters
+def greet():
+    print("Hello! Welcome to Python.")
+
+greet()  # function call
+
+
+print(" FUNCTION WITH PARAMETERS ")
+
+# function with parameters
+def add_numbers(a, b):
+    result = a + b
+    print("Sum is:", result)
+
+add_numbers(5, 7)
+
+
+print(" FUNCTION WITH RETURN VALUE ")
+
+# function returning a value
+def multiply(x, y):
+    return x * y
+
+product = multiply(4, 6)
+print("Product is:", product)
+
+
+print(" DEFAULT PARAMETER FUNCTION ")
+
+# default parameter
+def power(base, exponent=2):
+    return base ** exponent
+
+print("Square:", power(5))       # uses default exponent
+print("Cube:", power(5, 3))      # overrides default
+
+
+print(" FUNCTION WITH USER INPUT ")
+
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+num = 7
+print(num, "is", check_even_odd(num))
+
+
+print(" MULTIPLE RETURN VALUES ")
+
+def basic_operations(a, b):
+    addition = a + b
+    subtraction = a - b
+    return addition, subtraction
+
+add, sub = basic_operations(10, 3)
+print("Addition:", add)
+print("Subtraction:", sub)
+
+
+print(" LAMBDA FUNCTION (ANONYMOUS) ")
+
+# small one-line function
+square = lambda x: x * x
+print("Square using lambda:", square(6))
+
+
+# QUICK SUMMARY:
+
+# def → used to define function
+# parameters → inputs
+# return → sends value back
+# default arguments → optional parameters
+# lambda → small anonymous function
+# -----------------------------------------
