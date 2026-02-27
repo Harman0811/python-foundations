@@ -23,3 +23,76 @@ Modify data easily
 Write efficient programs
 
 Handle real-world data
+
+**Main Data Structures in Python**
+
+Python has built-in data structures you’ll use all the time.
+
+**1️ List**
+
+Ordered, mutable collection
+
+numbers = [10, 20, 30]
+
+Features:
+
+Ordered 
+
+Changeable (mutable) 
+
+Allows duplicates 
+
+Used when: you need a flexible collection
+
+**2️ Tuple**
+
+Ordered but immutable collection
+
+coordinates = (10, 20)
+
+Features:
+
+Ordered 
+
+Not changeable 
+
+Allows duplicates 
+
+Used when: data should not change
+
+**3️ Set**
+
+Unordered collection of unique items
+
+unique_numbers = {1, 2, 3}
+
+Features:
+
+Unordered 
+
+No duplicates 
+
+Mutable 
+
+Used when: you need unique values
+
+**4️ Dictionary**
+
+Stores data in key–value pairs
+
+student = {
+    "name": "Rahul",
+    "age": 20
+}
+
+Features:
+
+Key–value based 
+
+Fast lookup 
+
+Mutable 
+
+Keys must be unique 
+
+Used when: data has labels (like columns)
