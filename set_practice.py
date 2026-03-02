@@ -1,0 +1,74 @@
+# sets_practice.py
+# -----------------------------------------
+# BASIC NOTES:
+#
+# A set is an unordered collection of unique elements.
+#
+# Properties of sets:
+# - Unordered
+# - Mutable
+# - No duplicate values allowed
+#
+# Sets are created using curly braces {}
+# -----------------------------------------
+
+
+print("=== CREATING A SET ===")
+
+numbers = {1, 2, 3, 4, 5}
+print("Set:", numbers)
+
+
+print("\n=== DUPLICATES ARE REMOVED ===")
+
+duplicate_set = {1, 2, 2, 3, 3, 4}
+print("After removing duplicates:", duplicate_set)
+
+
+print("\n=== ADDING ELEMENTS ===")
+
+numbers.add(6)
+print("After add:", numbers)
+
+
+print("\n=== REMOVING ELEMENTS ===")
+
+numbers.remove(3)  # removes specific element
+print("After remove:", numbers)
+
+numbers.discard(10)  # safe remove (no error if not found)
+print("After discard:", numbers)
+
+
+print("\n=== SET OPERATIONS ===")
+
+set_a = {1, 2, 3, 4}
+set_b = {3, 4, 5, 6}
+
+print("Union:", set_a.union(set_b))
+print("Intersection:", set_a.intersection(set_b))
+print("Difference (A - B):", set_a.difference(set_b))
+
+
+print("\n=== LOOPING THROUGH SET ===")
+
+for item in set_a:
+    print("Element:", item)
+
+
+print("\n=== MEMBERSHIP CHECK ===")
+
+print("Is 2 in set_a?", 2 in set_a)
+print("Is 10 not in set_a?", 10 not in set_a)
+
+
+# -----------------------------------------
+# QUICK SUMMARY:
+#
+# {} → create set
+# add() → add element
+# remove() → remove element
+# union() → combine sets
+# intersection() → common elements
+# difference() → subtract sets
+# -----------------------------------------
