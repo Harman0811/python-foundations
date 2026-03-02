@@ -1,22 +1,16 @@
-# dictionaries_practice.py
-# -----------------------------------------
 # BASIC NOTES:
-#
 # A dictionary stores data in key-value pairs.
-#
+
 # Properties:
 # - Mutable
 # - Keys must be unique
 # - Fast lookup by key
-#
+
 # Dictionaries are created using:
 # {key: value}
-#
-# VERY IMPORTANT for Data Science
-# -----------------------------------------
 
 
-print("=== CREATING A DICTIONARY ===")
+print(" CREATING A DICTIONARY ")
 
 student = {
     "name": "Rahul",
@@ -27,13 +21,13 @@ student = {
 print("Student dictionary:", student)
 
 
-print("\n=== ACCESSING VALUES ===")
+print(" ACCESSING VALUES ")
 
 print("Name:", student["name"])
 print("Age:", student.get("age"))  # safer method
 
 
-print("\n=== ADDING / UPDATING VALUES ===")
+print(" ADDING / UPDATING VALUES ")
 
 student["age"] = 21  # update
 student["city"] = "Delhi"  # add new key
@@ -41,41 +35,38 @@ student["city"] = "Delhi"  # add new key
 print("Updated dictionary:", student)
 
 
-print("\n=== REMOVING ITEMS ===")
+print(" REMOVING ITEMS ")
 
 removed_value = student.pop("course")
 print("Removed course:", removed_value)
 print("After pop:", student)
 
 
-print("\n=== LOOPING THROUGH DICTIONARY ===")
+print(" LOOPING THROUGH DICTIONARY ")
 
 print("Keys:")
 for key in student:
     print(key)
 
-print("\nValues:")
+print("Values:")
 for value in student.values():
     print(value)
 
-print("\nKey-Value pairs:")
+print("Key-Value pairs:")
 for key, value in student.items():
     print(key, ":", value)
 
 
-print("\n=== CHECKING KEY EXISTENCE ===")
+print(" CHECKING KEY EXISTENCE ")
 
 print("Is 'name' in dictionary?", "name" in student)
 print("Is 'salary' not in dictionary?", "salary" not in student)
 
-
-# -----------------------------------------
 # QUICK SUMMARY:
-#
+
 # {key: value} → create dictionary
 # get() → safe access
 # pop() → remove item
 # keys() → get all keys
 # values() → get all values
 # items() → get key-value pairs
-# -----------------------------------------
