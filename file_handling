@@ -1,0 +1,125 @@
+## What is File Handling?
+
+File handling in Python is used to store and retrieve data from files. It allows programs to save data permanently instead of losing it when the program stops.
+
+Common uses:
+
+Saving user data
+
+Reading datasets
+
+Writing logs
+
+Working with configuration files
+
+## Types of Files
+1. Text Files
+
+Store data as readable characters
+
+Human-readable
+
+Examples: .txt, .csv, .json
+
+2. Binary Files
+
+Store data in binary form (0s and 1s)
+
+Not human-readable
+
+Examples: images, videos, PDFs
+
+## Opening a File
+
+Python uses the built-in open() function.
+
+file_object = open("filename", "mode")
+
+filename → file name or path
+
+mode → how the file will be used
+
+## File Modes
+Mode	Purpose
+r	Read (default)
+w	Write (overwrites file)
+a	Append (adds at end)
+x	Create new file
+b	Binary mode
+t	Text mode
++	Read and write
+
+Examples:
+
+open("data.txt", "r")  # read
+open("data.txt", "w")  # write
+open("data.txt", "a")  # append
+## Closing a File
+
+After working with a file, close it:
+
+f.close()
+
+Closing is important because it:
+
+Saves changes
+
+Frees resources
+
+Prevents file corruption
+
+## Using with open() (Recommended ⭐)
+
+Best practice is to use with, which automatically closes the file.
+
+with open("data.txt", "r") as f:
+    content = f.read()
+## Reading from Files
+read() — read entire file
+data = f.read()
+readline() — read one line
+line = f.readline()
+readlines() — read all lines as list
+lines = f.readlines()
+## Writing to Files
+Write text
+with open("data.txt", "w") as f:
+    f.write("Hello Python")
+
+## write() does not add a newline automatically.
+
+Write multiple lines
+lines = ["Hello\n", "Python\n"]
+
+with open("data.txt", "w") as f:
+    f.writelines(lines)
+## File Pointer
+
+The file pointer shows the current position in the file.
+
+f.tell()   # current position
+f.seek(0)  # move to beginning
+## Check if File Exists
+import os
+
+if os.path.exists("data.txt"):
+    print("File exists")
+## Delete a File
+import os
+os.remove("data.txt")
+## Common Errors
+
+FileNotFoundError → file doesn't exist
+
+PermissionError → no access rights
+
+Forgetting to close the file
+
+## Simple Example
+# write
+with open("example.txt", "w") as f:
+    f.write("Hello World\n")
+
+# read
+with open("example.txt", "r") as f:
+    print(f.read())
