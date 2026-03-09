@@ -134,14 +134,14 @@ Prefer with for file handling
 
 **Quick Summary**
 
-Exception handling prevents program crashes
+- Exception handling prevents program crashes
 
-Main keywords: try, except, else, finally
+- Main keywords: try, except, else, finally
 
-Use specific exception types
+- Use specific exception types
 
-else runs if no error
+- else runs if no error
 
-finally always runs
+- finally always runs
 
-Use raise to create custom errors
+- Use raise to create custom errors
