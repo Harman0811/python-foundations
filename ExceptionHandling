@@ -1,0 +1,147 @@
+**What is Exception Handling?**
+
+Exception handling is used to handle runtime errors so that the program does not crash.
+
+Normally, when an error occurs, Python stops the program. With exception handling, we can catch the error and handle it gracefully.
+
+In simple words: it is a way to prevent your program from breaking when something goes wrong.
+
+**Why Exception Handling is Important**
+
+Without exception handling:
+
+Program crashes on errors
+
+Bad user experience
+
+No proper error messages
+
+**With exception handling:**
+
+Program continues running
+Errors handled safely
+Better user experience
+Easier debugging
+
+**What is an Exception?**
+
+An exception is an error that occurs during program execution.
+
+**Example errors:**
+
+Division by zero
+
+File not found
+
+Invalid input
+
+Index out of range
+
+**Basic Syntax**
+
+Python uses try and except.
+
+try:
+    # risky code
+except:
+    # runs if error occurs
+**Example**
+try:
+    num = int(input("Enter number: "))
+    print(10 / num)
+except:
+    print("An error occurred")
+
+If user enters 0 → handled
+If user enters text → handled
+Program does not crash
+
+**Catching Specific Exceptions**
+
+It is better to catch specific errors.
+
+try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+**Common built-in exceptions:**
+
+ZeroDivisionError
+
+ValueError
+
+FileNotFoundError
+
+IndexError
+
+TypeError
+
+**Multiple Except Blocks**
+try:
+    num = int(input())
+    print(10 / num)
+
+except ValueError:
+    print("Invalid input")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+**Using else**
+
+else runs only if no exception occurs.
+
+try:
+    x = int("10")
+except ValueError:
+    print("Error")
+else:
+    print("No error occurred")
+
+**Using finally**
+
+finally always runs, whether an error occurs or not.
+
+try:
+    f = open("data.txt")
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("This always executes")
+
+Often used for cleanup (closing files, releasing resources).
+
+Raising Exceptions Manually
+
+We can create our own exceptions using raise.
+
+age = -5
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+**Best use cases :**
+
+Catch specific exceptions
+
+Avoid empty except blocks
+
+Use finally for cleanup
+
+Use meaningful error messages
+
+Prefer with for file handling
+
+**Quick Summary**
+
+Exception handling prevents program crashes
+
+Main keywords: try, except, else, finally
+
+Use specific exception types
+
+else runs if no error
+
+finally always runs
+
+Use raise to create custom errors
