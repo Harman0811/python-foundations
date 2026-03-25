@@ -1,8 +1,8 @@
 # print function to print on the console
 print("hi this is a print function to print something on the console")
 
-name = "Harman" # a variable
-age = 12
+name = "Harman" # a variable that stores string value
+age = 12 # variable that stores integer value
 
 # formatting 
 print(f"my name is {name} and i am {age} years old")
