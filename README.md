@@ -22,7 +22,13 @@ The goal of this repository is to build a strong programming foundation before m
 ## Repository Structure
 
 Python Foundation:
-* Basics
+*  Basics of python.
+*  Control flows - Conditonals, Loops
+*  Data Structures - List, Tuple, Sets, Dictionaries
+*  Functions in python
+*  File handling basics
+*  Exception Handling basics
+
 
 Each folder contains well-structured Python scripts focused on specific concepts.
 
