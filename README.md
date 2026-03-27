@@ -21,17 +21,12 @@ The goal of this repository is to build a strong programming foundation before m
 
 ## Repository Structure
 
-python-foundations/
-│
-├── basics/
-├── control_flow/
-├── functions/
-├── data_structures/
-└── README.md
+Python Foundation:
+* Basics
 
 Each folder contains well-structured Python scripts focused on specific concepts.
 
-##  Why I Created This Repository
+###  Why I Created This Repository
 
 As a Data Science student, I believe strong programming fundamentals are essential.
 This repository serves as:
@@ -40,8 +35,8 @@ This repository serves as:
 * A reference for revision
 * A demonstration of my foundational skills
 
-## Tech Used
+### Tech Used
 * Python 3
 
-⭐ Thank you for visiting my repository!
+Thank you for visiting my repository!
 
