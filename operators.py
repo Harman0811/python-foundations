@@ -80,3 +80,4 @@ list3 = [1, 2, 3]
 print("list1 is list2:", list1 is list2)      # True (same memory)
 print("list1 is list3:", list1 is list3)      # False (different objects)
 print("list1 == list3:", list1 == list3)      # True (same values)
+
