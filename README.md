@@ -1,6 +1,6 @@
-# python-foundations
+# Python Foundations Repository
 
-Hi, I'm **Harmandeep kaur**, a **BSc Data Science** student.
+Hi, this is **Harmandeep kaur**, a **BSc Data Science** student.
 
 This repository contains my foundational practice in Python. It reflects my understanding of core programming concepts that are essential for Data Science and software development.
 
