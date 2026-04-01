@@ -45,4 +45,3 @@ This repository serves as:
 * Python 3
 
 Thank you for visiting my repository!
-
