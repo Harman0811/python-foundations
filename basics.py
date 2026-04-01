@@ -1,3 +1,4 @@
+# This file only includes the basic function that a beginner could start with 
 # print function to print on the console
 print("hi this is a print function to print something on the console")
 
